@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>亚太国际娱乐城 - 国际首选游戏平台</title>
+    <meta name="description" content="亚太国际娱乐城 - 国际首选游戏平台，首存优惠，24/7客服，安全保障">
+    <meta name="keywords" content="游戏平台,娱乐城,首存优惠,在线游戏">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '4137060343215254');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=4137060343215254&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #0f1419 0%, #1a202c 50%, #2d3748 100%);
+            min-height: 100vh;
+            color: white;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* 顶部横幅 */
+        .header-banner {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeInDown 1s ease-out;
+        }
+        
+        .main-title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ffd700, #ff6b6b, #4ecdc4);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 3s ease-in-out infinite;
+            margin-bottom: 10px;
+        }
+        
+        .sub-title {
+            font-size: 1.5rem;
+            color: #a0aec0;
+            font-weight: 300;
+        }
+        
+        /* 中央促销图片 */
+        .promo-section {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+        
+        .promo-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            animation: float 6s ease-in-out infinite;
+            max-width: 800px;
+        }
+        
+        .promo-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(255, 107, 107, 0.2);
+        }
+        
+        .promo-image {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            display: block;
+        }
+        
+        /* 服务特点区域 */
+        .features-section {
+            margin-bottom: 50px;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+        
+        .feature-card:nth-child(1)::before {
+            background: linear-gradient(135deg, #ff6b6b, #ffd93d);
+        }
+        
+        .feature-card:nth-child(2)::before {
+            background: linear-gradient(135deg, #4ecdc4, #44a08d);
+        }
+        
+        .feature-card:nth-child(3)::before {
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+        }
+        
+        .feature-card:hover::before {
+            opacity: 0.1;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+        
+        .feature-description {
+            color: #a0aec0;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+        
+        /* 行动按钮 */
+        .cta-section {
+            text-align: center;
+            margin-bottom: 50px;
+            animation: fadeInUp 1s ease-out 0.9s both;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #ffa500);
+            color: white;
+            font-size: 1.8rem;
+            font-weight: bold;
+            padding: 20px 50px;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(255, 107, 107, 0.4);
+        }
+        
+        .cta-disclaimer {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #718096;
+        }
+        
+        /* 玩家评价区域 */
+        .reviews-section {
+            margin-bottom: 50px;
+            animation: fadeInUp 1s ease-out 1.2s both;
+        }
+        
+        .reviews-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #ffd700;
+            font-weight: bold;
+        }
+        
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+        }
+        
+        .review-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .stars {
+            color: #ffd700;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .review-text {
+            color: #e2e8f0;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-style: italic;
+            font-size: 1rem;
+        }
+        
+        .reviewer-name {
+            color: #4ecdc4;
+            font-weight: bold;
+            text-align: right;
+        }
+        
+        /* 底部信息 */
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            animation: fadeInUp 1s ease-out 1.5s both;
+        }
+        
+        .footer-text {
+            color: #a0aec0;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        
+        /* 动画效果 */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        @keyframes gradientShift {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .main-title {
+                font-size: 2.5rem;
+            }
+            
+            .sub-title {
+                font-size: 1.2rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .reviews-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .cta-button {
+                font-size: 1.5rem;
+                padding: 15px 35px;
+            }
+            
+            .promo-card {
+                padding: 15px;
+            }
+            
+            .feature-card {
+                padding: 25px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .main-title {
+                font-size: 2rem;
+            }
+            
+            .sub-title {
+                font-size: 1rem;
+            }
+            
+            .reviews-title {
+                font-size: 2rem;
+            }
+            
+            .cta-button {
+                font-size: 1.3rem;
+                padding: 12px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 顶部横幅 -->
+        <div class="header-banner">
+            <h1 class="main-title">国际首选游戏平台</h1>
+            <h2 class="sub-title">立即加入获取独家优惠</h2>
+        </div>
+        
+        <!-- 中央促销图片 -->
+        <div class="promo-section">
+            <div class="promo-card">
+                <img src="https://page.gensparksite.com/v1/base64_upload/258c64f1a0996e68d0d23d54d6d9128f" 
+                     alt="亚太国际娱乐城促销" 
+                     class="promo-image"
+                     onerror="this.style.display='none'">
+            </div>
+        </div>
+        
+        <!-- 服务特点区域 -->
+        <div class="features-section">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🎁</span>
+                    <h3 class="feature-title">首存优惠</h3>
+                    <p class="feature-description">首充500U 送80U！笔笔充值送3% Bonus！超值回馈等您来拿！</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🕐</span>
+                    <h3 class="feature-title">24/7客服</h3>
+                    <p class="feature-description">全天候专业客服为您解答问题，随时为您提供最优质的服务体验！</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🛡️</span>
+                    <h3 class="feature-title">安全保障</h3>
+                    <p class="feature-description">资金安全，游戏公平有保障！采用最先进的加密技术保护您的权益！</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 行动按钮 -->
+        <div class="cta-section">
+            <a href="https://6666f.top/?dl=6hrtps" 
+               class="cta-button" 
+               onclick="fbq('track', 'Lead'); fbq('track', 'InitiateCheckout');"
+               target="_blank">
+               立即领取优惠
+            </a>
+            <p class="cta-disclaimer">*活动条款适用，请详阅相关规定。18岁以上方可参与。</p>
+        </div>
+        
+        <!-- 玩家评价区域 -->
+        <div class="reviews-section">
+            <h2 class="reviews-title">玩家好评</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"平台非常稳定，出款速度很快，客服态度也很好。优惠活动很给力，强烈推荐给大家！"</p>
+                    <p class="reviewer-name">- 李先生</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"游戏种类丰富，界面设计很棒，充值提现都很方便。真的是个值得信赖的平台！"</p>
+                    <p class="reviewer-name">- 王女士</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 底部信息 -->
+        <div class="footer">
+            <p class="footer-text">© 2024 亚太国际 版权所有</p>
+            <p class="footer-text">本网站仅限18岁以上人士使用，请理性游戏，适度娱乐</p>
+        </div>
+    </div>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDhOkL2FXhozZCjcf%2B2JHeRNKHVBEICERugGpdwvlGTlIiF%2FZE4WoouSSRQYBWpkiL7IeqDdvy7YyBgav8tYjOdIiUYyxDwLcFa5zhul9lf0OT8RLv3FpnKh6UaOPzF6Tf9%2Fz3SkUZGtVu3Sgh2JUMhXh1%2BVI1wtwWxf%2F2pMET1bSxNrgrFpnqJzt6ARtRHnS0NvsPyhe6lPN1XOe12UlpkyT7LJo9wX8YFJjwboHdOK6iFX5tW96kmVL3GHu8ZUfIoQ%2Fz4MmTcDN%2BUbfmjBs5GH1q9MIcqLnXH1NQaKHppK3guiwQ5UatR6Yfm2XWDF86hsNqu6qDGiu1MoHx4bjwou6OckMFcHw91eSPkiE166tVpChKJav5tub1aAzuqLWDqgW%2BKj8TuCY6i74R11gGMRWhgSg1wglNEFfuqUeFehnZX5uMctLVmMGTIltAbHMhvyJtCrKvHe62Hyegcf3n6V8z2I3eGh5DoeGRSApnTLi";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDhOkL2FXhozZCjcf+2JHeRNKHVBEICERugGpdwvlGTlIiF/ZE4WoouSSRQYBWpkiL7IeqDdvy7YyBgav8tYjOdIiUYyxDwLcFa5zhul9lf0OT8RLv3FpnKh6UaOPzF6Tf9/z3SkUZGtVu3Sgh2JUMhXh1+VI1wtwWxf/2pMET1bSxNrgrFpnqJzt6ARtRHnS0NvsPyhe6lPN1XOe12UlpkyT7LJo9wX8YFJjwboHdOK6iFX5tW96kmVL3GHu8ZUfIoQ/z4MmTcDN+UbfmjBs5GH1q9MIcqLnXH1NQaKHppK3guiwQ5UatR6Yfm2XWDF86hsNqu6qDGiu1MoHx4bjwou6OckMFcHw91eSPkiE166tVpChKJav5tub1aAzuqLWDqgW+Kj8TuCY6i74R11gGMRWhgSg1wglNEFfuqUeFehnZX5uMctLVmMGTIltAbHMhvyJtCrKvHe62Hyegcf3n6V8z2I3eGh5DoeGRSApnTLi";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
